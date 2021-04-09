@@ -11,8 +11,8 @@
           href="/"
         >
           <img
-            src="~assets/buefy.png"
-            alt="Buefy"
+            src="/new-g5-logo.png"
+            alt="g5 corporate logo"
             height="28"
           >
         </a>
@@ -28,7 +28,7 @@
     <section class="main-content columns">
       <aside class="column is-2 section">
         <p class="menu-label is-hidden-touch">
-          General
+          G5 Volunteers
         </p>
         <ul class="menu-list">
           <li
@@ -63,9 +63,9 @@ export default {
           to: { name: 'index' }
         },
         {
-          title: 'Inspire',
-          icon: 'lightbulb',
-          to: { name: 'inspire' }
+          title: 'Volunteer',
+          icon: 'pencil',
+          to: { name: 'volunteer' }
         }
       ]
     }
