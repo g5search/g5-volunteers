@@ -1,7 +1,7 @@
 <template>
   <div>
     <nav
-      class="navbar header has-shadow is-primary"
+      class="navbar header has-shadow is-secondary"
       role="navigation"
       aria-label="main navigation"
     >
@@ -15,6 +15,9 @@
             alt="g5 corporate logo"
             height="28"
           >
+          <h1>
+            G5 Volunteers
+          </h1>
         </a>
 
         <div class="navbar-burger">
@@ -72,3 +75,14 @@ export default {
   }
 }
 </script>
+
+<style lang="scss">
+.menu-list a {
+  transition: 200ms ease-in;
+  opacity: 0.8;
+  &.is-active {
+    border-radius: 25px;
+    opacity: 1;
+  }
+}
+</style>
