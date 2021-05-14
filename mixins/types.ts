@@ -3,5 +3,5 @@ export interface Hours {
   organization: string[];
   description: string;
   hours: number;
-  date: string;
+  date: object | string;
 }

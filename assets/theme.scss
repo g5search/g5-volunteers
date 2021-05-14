@@ -1,56 +1,17 @@
-@import "~bulma/sass/utilities/_all";
-$sidebar-width: 50vw;
-$primary: #3b46d3;
-$primary-light: findLightColor($primary);
-$primary-dark: findDarkColor($primary);
-$primary-invert: findColorInvert($primary);
-$secondary: #b3d6f1;
-$secondary-light: findLightColor($secondary);
-$secondary-dark: findDarkColor($secondary);
-$secondary-invert: findColorInvert($secondary);
-$tertiary: #092240;
-$tertiary-light: findLightColor($tertiary);
-$tertiary-dark: findDarkColor($tertiary);
-$tertiary-invert: findColorInvert($tertiary);
-$quaternary: #e1244d;
-$quaternary-light: findLightColor($quaternary);
-$quaternary-dark: findDarkColor($quaternary);
-$quaternary-invert: findColorInvert($quaternary);
-$custom-colors: null !default;
-$custom-shades: null !default;
-
-$colors: mergeColorMaps(
-    (
-        "primary": (
-            $primary,
-            $primary-light,
-            $primary-dark,
-            $primary-invert
-        ),
-        "secondary": (
-            $secondary,
-            $secondary-light,
-            $secondary-dark,
-            $secondary-invert
-        ),
-        "tertiary": (
-            $tertiary,
-            $tertiary-invert,
-            $tertiary-light,
-            $tertiary-dark
-        ),
-        "quaternary": (
-            $quaternary,
-            $quaternary-light,
-            $quaternary-dark,
-            $quaternary-invert
-        )
-    ), $custom-colors
+$theme-colors: (
+  'primary': #020f39,
+  'secondary': #3d45d3,
+  'tertiary': #e2254d,
+  'quaternary': #b5d5f3
 );
-
-$link: $primary;
-$link-invert: $primary-invert;
-$link-focus-border: $primary;
-
-@import "~bulma";
-@import "~buefy/src/scss/buefy";
+$font-family-base: 'Roboto Condensed', sans-serif;
+$enable-rounded: true;
+$enable-shadows: false;
+$enable-gradients: false;
+$enable-transitions: true;
+$enable-print-styles: false;
+$bv-enable-table-stacked: false;
+$body-bg: #e5e4e5;
+// BOOTSTRAP VARIABLES DECLARED ABOVE
+@import 'bootstrap/scss/bootstrap.scss';
+@import 'bootstrap-vue/src/index.scss';

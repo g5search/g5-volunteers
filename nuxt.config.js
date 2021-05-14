@@ -1,5 +1,5 @@
 export default {
-  // Global page headers: https://go.nuxtjs.dev/config-head
+  telemetry: false,
   head: {
     title: 'g5-volunteers',
     htmlAttrs: {
@@ -11,38 +11,23 @@ export default {
       { hid: 'description', name: 'description', content: '' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap' }
     ]
   },
-
-  // Global CSS: https://go.nuxtjs.dev/config-css
   css: ['@/assets/theme.scss'],
-
-  // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [
-  ],
-
-  // Auto import components: https://go.nuxtjs.dev/config-components
+  plugins: [],
   components: true,
-
-  // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-  buildModules: [
-    // https://go.nuxtjs.dev/typescript
-    '@nuxt/typescript-build'
-  ],
-
-  // Modules: https://go.nuxtjs.dev/config-modules
+  buildModules: ['@nuxt/typescript-build'],
   modules: [
-    // https://go.nuxtjs.dev/buefy
-    ['nuxt-buefy', { css: false }],
-    // https://go.nuxtjs.dev/axios
+    'bootstrap-vue/nuxt',
     '@nuxtjs/axios'
   ],
-
-  // Axios module configuration: https://go.nuxtjs.dev/config-axios
+  bootstrapVue: {
+    bootstrapCSS: false,
+    bootstrapVueCSS: false,
+    icons: false
+  },
   axios: {},
-
-  // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {
-  }
+  build: {}
 }

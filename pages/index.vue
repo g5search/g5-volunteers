@@ -1,13 +1,11 @@
 <template>
-  <section class="section">
-    <div class="columns is-mobile">
+  <b-container>
+    <div>
       Stuff
     </div>
-  </section>
+  </b-container>
 </template>
 
 <script>
-export default {
-  name: 'HomePage'
-}
+
 </script>
